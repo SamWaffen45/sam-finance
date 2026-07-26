@@ -1,12 +1,22 @@
+
+import Header from "../components/dashboard/Header";
+import BalanceCard from "../components/dashboard/BalanceCard";
+import AccountsCard from "../components/dashboard/AccountsCard";
+import GoalCard from "../components/dashboard/GoalCard";
+import WealthChart from "../components/dashboard/WealthChart";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold">💰 Sam Finance</h1>
+    <main className="min-h-screen bg-zinc-950 text-white">
+      <div className="mx-auto max-w-6xl px-6 py-8 space-y-6">
+        <Header />
 
-        <p className="mt-4 text-zinc-400 text-xl">
-          La tua piattaforma personale per la gestione del patrimonio
-        </p>
+        <BalanceCard />
+
+        <AccountsCard />
+
+        <GoalCard />
+        <WealthChart />
       </div>
     </main>
   );
